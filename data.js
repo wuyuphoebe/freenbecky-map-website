@@ -106,9 +106,7 @@ const FB_DATA = [
         lng: 100.7092814,
         images: [
             { url: "images/GAP/FreenBecky_2022-1.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/GAP/FreenBecky_2022-2.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
             { url: "images/GAP/FreenBecky_2022-3.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/GAP/FreenBecky_2022-4.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
             { url: "images/GAP/FreenBecky_2022-5.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
             { url: "images/GAP/FreenBecky_2022-6.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
             { url: "images/GAP/FreenBecky_2022-7.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
