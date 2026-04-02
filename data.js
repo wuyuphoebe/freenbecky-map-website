@@ -29,17 +29,16 @@ const FB_DATA = [
         lat: 13.8235644,
         lng: 100.3663811,
         images: [
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/FreenBecky_2024-1.PNG", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" }
+            { url: "images/Wa Wa House/FreenBecky_2024-1.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/Wa Wa House/FreenBecky_2024-2.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/Wa Wa House/FreenBecky_2024-3.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/Wa Wa House/FreenBecky_2024-4.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/Wa Wa House/FreenBecky_2024-5.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/Wa Wa House/FreenBecky_2024-6.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/Wa Wa House/FreenBecky_2024-7.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/Wa Wa House/FreenBecky_2024-8.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/Wa Wa House/FreenBecky_2024-9.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/Wa Wa House/FreenBecky_2024-10.jpg", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" }
         ],
         mapUrl: "https://maps.app.goo.gl/9o7FQBSgev1kuDXE9",
         desc: "The Loyal Pin 拍攝地"
@@ -53,10 +52,10 @@ const FB_DATA = [
         lng: 100.5296505,
         images: [
             { url: "images/BLOCK I/Becky_20240526-1.jpg", platform: "Instagram", category: "life", author: "Becky" },
-            { url: "images/BLOCK I/Becky_20240526-1.jpg", platform: "Instagram", category: "life", author: "Becky" },
-            { url: "images/BLOCK I/Becky_20240526-1.jpg", platform: "Instagram", category: "life", author: "Becky" },
-            { url: "images/BLOCK I/Becky_20240526-1.jpg", platform: "Instagram", category: "life", author: "Becky" },
-            { url: "images/BLOCK I/Becky_20240526-1.jpg", platform: "Instagram", category: "life", author: "Becky" }
+            { url: "images/BLOCK I/Becky_20240526-2.jpg", platform: "Instagram", category: "life", author: "Becky" },
+            { url: "images/BLOCK I/Becky_20240526-3.jpg", platform: "Instagram", category: "life", author: "Becky" },
+            { url: "images/BLOCK I/Becky_20240526-4.jpg", platform: "Instagram", category: "life", author: "Becky" },
+            { url: "images/BLOCK I/Becky_20240526-5.jpg", platform: "Instagram", category: "life", author: "Becky" }
         ],
         mapUrl: "https://maps.app.goo.gl/agUqyhnLf7TtQGfM8",
         desc: "生活照"
