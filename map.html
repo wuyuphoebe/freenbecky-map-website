@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map | FB ARCHIVE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        /* Popup 內容器樣式 */
+        .popup-container {
+            width: 220px;
+            padding: 5px;
+            text-align: center;
+        }
+        .popup-img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #eee;
+        }
+        .popup-title {
+            color: #d4af37; /* 金色 */
+            font-size: 1.1rem;
+            margin: 5px 0;
+            display: block;
+            font-weight: bold;
+        }
+        .popup-info {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 12px;
+            display: block;
+        }
+        /* 按鈕群組樣式 */
+        .popup-btn-group {
+            display: flex;
+            gap: 8px;
+            margin-top: 5px;
+        }
+        .popup-btn {
+            flex: 1;
+            padding: 8px 0;
+            font-size: 0.75rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .btn-google {
+            background: #4285F4; /* Google 藍 */
+            color: white !important;
+        }
+        .btn-more {
+            background: #d4af37; /* 回憶錄金 */
+            color: white !important;
+        }
+        .popup-btn:hover { opacity: 0.8; }
+        
+        /* 修正 Leaflet 預設容器樣式 */
+        .leaflet-popup-content-wrapper { border-radius: 15px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">FB ARCHIVE</a>
+            <div class="links">
+                <a href="index.html">HOME</a>
+                <a href="map.html">MAP</a>
+                <a href="archive.html">ARCHIVE</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div style="margin: 20px 0; border: 1px solid #d4af37; border-radius: 20px; overflow: hidden; height: 75vh;">
+            <div id="map" style="height: 100%; width: 100%;"></div>
+        </div>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([13.7563, 100.5018], 12);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+        FB_DATA.forEach(item => {
+            const marker = L.marker([item.lat, item.lng]).addTo(map);
+            
+            // 安全取得第一張圖片
+            const firstImg = (item.images && item.images.length > 0) ? item.images[0].url : 'placeholder.jpg';
+            
+            // 生成跳轉到 Archive 的網址，並帶上地點名稱作為搜尋參數
+            const archiveJumpUrl = `archive.html?search=${encodeURIComponent(item.name)}`;
+
+            const popupContent = `
+                <div class="popup-container">
+                    <img src="${firstImg}" class="popup-img">
+                    <span class="popup-title">${item.name}</span>
+                    <span class="popup-info">${item.celebrity} | ${item.date}</span>
+                    <div class="popup-btn-group">
+                        <a href="${item.mapUrl}" target="_blank" class="popup-btn btn-google">GOOGLE MAPS</a>
+                        <a href="${archiveJumpUrl}" class="popup-btn btn-more">VIEW MORE</a>
+                    </div>
+                </div>
+            `;
+
+            marker.bindPopup(popupContent);
+        });
+    </script>
+</body>
+</html>

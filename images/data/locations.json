@@ -1,0 +1,242 @@
+[
+  {
+    "id": "loc1",
+    "name": "Mother Roaster Talat Noi มาเธอร์ โรสเตอร์",
+    "lat": 13.732960837964837, 
+    "lng": 100.51232112780743,
+    "celebrity": "Freen",
+    "google_map_url": "https://maps.app.goo.gl/mW5rL77HkjJHH3bj8",
+    "photos": [
+      {
+        "urls": [
+          "images/Mother Roaster Talat Noi/Freen_20200927-1.jpg",
+          "images/Mother Roaster Talat Noi/Freen_20200927-2.jpg",
+          "images/Mother Roaster Talat Noi/Freen_20200927-3.jpg",
+          "images/Mother Roaster Talat Noi/Freen_20200927-4.jpg",
+          "images/Mother Roaster Talat Noi/Freen_20200927-5.jpg",
+          "images/Mother Roaster Talat Noi/Freen_20200927-6.jpg",
+          "images/Mother Roaster Talat Noi/Freen_20200927-7.jpg",
+          "images/Mother Roaster Talat Noi/Freen_20200927-8.jpg",
+          "images/Mother Roaster Talat Noi/Freen_20200927-9.jpg",
+          "images/Mother Roaster Talat Noi/Freen_20200927-10.jpg"
+        ],
+        "timestamp": "2020-09-27",
+        "event": "生活照",
+        "platform": "Instagram",
+        "author": "Freen"
+      }
+    ]
+  },
+  {
+    "id": "loc2",
+    "name": "WAWA House วาวา เฮาส์",
+    "lat": 13.823467027137193, 
+    "lng": 100.37079334723798,
+    "celebrity": "FreenBecky",
+    "google_map_url": "https://maps.app.goo.gl/HHprpm3DPfkSfDPn8",
+    "photos": [
+      {
+        "urls": ["images/The Loyal Pin Wa Wa House/1.PNG",
+                 "images/The Loyal Pin Wa Wa House/2.PNG",
+                 "images/The Loyal Pin Wa Wa House/3.PNG",
+                 "images/The Loyal Pin Wa Wa House/4.PNG",
+                 "images/The Loyal Pin Wa Wa House/5.PNG",
+                 "images/The Loyal Pin Wa Wa House/6.PNG",
+                 "images/The Loyal Pin Wa Wa House/7.PNG",
+                 "images/The Loyal Pin Wa Wa House/8.PNG",
+                 "images/The Loyal Pin Wa Wa House/9.PNG",
+                 "images/The Loyal Pin Wa Wa House/10.PNG",
+                 "images/The Loyal Pin Wa Wa House/11.JPG"
+                ],
+        "timestamp": "2024",
+        "event": "The Loyal Pin 拍攝地",
+        "platform": "Instagram,Twitter,Youtube",
+        "author": "idolfactory"
+      }
+    ]
+  },
+  {
+    "id": "loc3",
+    "name": "99 Home Studio 117",
+    "lat": 13.821797666114534, 
+    "lng": 100.71185293034999, 
+    "celebrity": "FreenBecky",
+    "google_map_url": "https://maps.app.goo.gl/xspmE26LsJUfrHp66",
+    "photos": [
+      {
+        "urls": ["images/GAP/1.JPG",
+                 "images/GAP/2.PNG",
+                 "images/GAP/3.JPG",
+                 "images/GAP/4.PNG",
+                 "images/GAP/5.JPG",
+                 "images/GAP/6.JPG",
+                 "images/GAP/7.JPG",
+                 "images/GAP/8.JPG"
+                ],
+        "timestamp": "2022",
+        "event": "GAP The Series 拍攝地/Sam的家",
+        "platform": "Instagram,Twitter,Youtube",
+        "author": "idolfactory"
+      }
+    ]
+  },
+  {
+    "id": "loc4",
+    "name": "蘭實大學 Rangsit University มหาวิทยาลัยรังสิต",
+    "lat": 13.964280580342416,  
+    "lng": 100.58669907273574,
+    "celebrity": "Freen",
+    "google_map_url": "https://maps.app.goo.gl/aqAV5SFRE7tADQf59",
+    "photos": [
+      {
+        "urls": ["images/Rangsit/1.JPG",
+                 "images/Rangsit/2.JPG",
+                 "images/Rangsit/3.JPG",
+                 "images/Rangsit/4.JPG",
+                 "images/Rangsit/5.JPG",
+                 "images/Rangsit/6.JPG",
+                 "images/Rangsit/7.JPG",
+                 "images/Rangsit/8.JPG",
+                 "images/Rangsit/9.JPG",
+                 "images/Rangsit/10.JPG"
+                ],
+        "timestamp": "2022",
+        "event": "Freen的大學",
+        "platform": "Instagram,Twitter",
+        "author": "Freen"
+      }
+    ]
+  },
+  {
+    "id": "loc5",
+    "name": "蘭實大學 RSU Music Academy Conservatory of Music Rangsit University",
+    "lat": 13.966301656167948,   
+    "lng": 100.58369771931532,
+    "celebrity": "Freen",
+    "google_map_url": "https://maps.app.goo.gl/HUZ4PUDu5YEjm1xa6",
+    "photos": [
+      {
+        "urls": ["images/Rangsit/11.JPG",
+                 "images/Rangsit/12.JPG",
+                 "images/Rangsit/13.JPG"
+                ],
+        "timestamp": "2022",
+        "event": "Freen畢業當天的職播現場",
+        "platform": "Twitter",
+        "author": "Freen"
+      }
+    ]
+  },
+  {
+    "id": "loc6",
+    "name": "COK Cream of The Koff",
+    "lat": 13.9641931578908,    
+    "lng": 100.59195861929351,
+    "celebrity": "FreenBecky",
+    "google_map_url": "https://maps.app.goo.gl/7T1i16jodwRaJ5XFA",
+    "photos": [
+      {
+        "urls": ["images/COK/1.PNG",
+                 "images/COK/2.PNG",
+                 "images/COK/3.PNG",
+                 "images/COK/4.PNG",
+                 "images/COK/5.PNG"
+                ],
+        "videos": ["images/COK/6.mp4"],
+        "timestamp": "2021/9/11",
+        "event": "FB約會的咖啡廳",
+        "platform": "IG",
+        "author": "Freen、Bekcy"
+      }
+    ]
+  },
+  {
+    "id": "loc7",
+    "name": "Kaembum Fresh Coffee Branch 2 By Nun ร้านแก้มบุ๋มกาแฟสด สาขา 2 By Nun",
+    "lat": 13.383791172990481,    
+    "lng": 101.64708329999111,
+    "celebrity": "Freen",
+    "google_map_url": "https://maps.app.goo.gl/cbm9Grd533Mr1fHT8",
+    "photos": [
+      {
+        "urls": ["images/Kaembum Fresh Coffee/1.JPG",
+                 "images/Kaembum Fresh Coffee/2.JPG"
+                ],
+        "timestamp": "2021",
+        "event": "Freen阿姨的咖啡廳",
+        "platform": "Facebook",
+        "author": "Freen"
+      }
+    ]
+  },
+  {
+    "id": "loc8",
+    "name": "FigureGround Cafe ฟิกเกอร์กราวน์คาเฟ่",
+    "lat": 13.788645457194882,   
+    "lng": 100.56324268220003,  
+    "celebrity": "Freen",
+    "google_map_url": "https://maps.app.goo.gl/bjx12PoV6xewN4ab6",
+    "photos": [
+      {
+        "urls": ["images/FigureGround Cafe/1.PNG",
+                 "images/FigureGround Cafe/2.PNG",
+                 "images/FigureGround Cafe/3.JPG",
+                 "images/FigureGround Cafe/4.PNG",
+                 "images/FigureGround Cafe/5.JPG",
+                 "images/FigureGround Cafe/6.JPG",
+                 "images/FigureGround Cafe/7.JPG"
+                ],
+        "timestamp": "2022/09/21",
+        "event": "生活照",
+        "platform": "IG",
+        "author": "Freen"
+
+      }
+    ]
+  },
+  {
+    "id": "loc9",
+    "name": "Woolloomooloo Bakery Ratchada",
+    "lat": 13.796646410566826,   
+    "lng": 100.56815963557325,  
+    "celebrity": "Freen",
+    "google_map_url": "https://maps.app.goo.gl/Z8LF1ntqxL7Us14U9",
+    "photos": [
+      {
+        "urls": ["images/Woolloomooloo Bakery Ratchada/1.JPG",
+                 "images/Woolloomooloo Bakery Ratchada/2.JPG",
+                 "images/Woolloomooloo Bakery Ratchada/3.JPG",
+                 "images/Woolloomooloo Bakery Ratchada/4.JPG"
+                ],
+        "timestamp": "2022/07/01",
+        "event": "生活照",
+        "platform": "IG",
+        "author": "Freen"
+
+      }
+    ]
+  },
+  {
+    "id": "loc10",
+    "name": "BLOCK I",
+    "lat": 13.744507858097009, 
+    "lng": 100.53222271778218 ,  
+    "celebrity": "Becky",
+    "google_map_url": "https://maps.app.goo.gl/i29hNXU1kWSbTZqYA",
+    "photos": [
+      {
+        "urls": ["images/BLOCK I/1.JPG",
+                 "images/BLOCK I/2.JPG",
+                 "images/BLOCK I/3.JPG",
+                 "images/BLOCK I/4.JPG",
+                 "images/BLOCK I/5.JPG"
+                ],
+        "timestamp": "2024/05/26",
+        "event": "生活照",
+        "platform": "IG",
+        "author": "Becky"
+
+      }
+    ]
+  }
+]
