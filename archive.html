@@ -6,47 +6,20 @@
     <title>Archive | FB ARCHIVE</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        :root { --gold: #d4af37; --bg-gray: #f4f4f4; }
-        body { background-color: var(--bg-gray); margin: 0; font-family: -apple-system, sans-serif; }
-
-        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-
-        /* 網格設定：一排三個 */
-        .grid-layout {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            align-items: start;
+        /* 確保影片在輪播中大小一致 */
+        .carousel-item video, .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
-
-        @media (max-width: 900px) { .grid-layout { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 600px) { .grid-layout { grid-template-columns: 1fr; } }
-
-        /* 卡片與媒體 */
-        .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; flex-direction: column; }
-        .carousel { position: relative; width: 100%; background: #e0e0e0; }
-        .carousel-inner { display: flex; transition: transform 0.5s ease; }
-        .carousel-item { min-width: 100%; }
-        .carousel-item img, .carousel-item video { width: 100%; height: auto; display: block; object-fit: contain; }
-        .carousel-item iframe { width: 100%; aspect-ratio: 16 / 9; border: none; }
-
-        .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; width: 30px; height: 30px; border-radius: 50%; cursor: pointer; z-index: 5; }
-        .prev { left: 8px; } .next { right: 8px; }
-
-        .card-content { padding: 15px; }
-        .card-title { color: var(--gold); margin: 0 0 5px 0; font-size: 1.05rem; font-family: serif; }
-        .card-meta { font-size: 0.75rem; color: #999; margin-bottom: 8px; }
-        .info-tag-container { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
-        .info-tag { background: #f0f0f0; color: #777; padding: 2px 6px; border-radius: 4px; font-size: 0.65rem; }
-        .card-desc { font-size: 0.8rem; color: #555; line-height: 1.5; margin: 0; }
-
-        /* 篩選欄 */
-        .filter-section { display: flex; justify-content: center; gap: 12px; margin-bottom: 30px; flex-wrap: wrap; }
-        .filter-section input, .filter-section select { padding: 8px 12px; border: 1px solid #ddd; border-radius: 20px; outline: none; font-size: 0.9rem; }
+        /* 影片播放按鈕樣式 (選填) */
+        .carousel-item video::-webkit-media-controls-panel {
+            background-color: rgba(0,0,0,0.5);
+        }
     </style>
 </head>
 <body>
-
     <nav>
         <div class="nav-container">
             <a href="index.html" class="logo">FB ARCHIVE</a>
@@ -58,120 +31,140 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="filter-section">
-            <input type="text" id="searchInput" placeholder="搜尋關鍵字...">
-            <select id="celebrityFilter">
-                <option value="">所有藝人</option>
-                <option value="Freen & Becky">Freen & Becky</option>
-                <option value="Freen">Freen</option>
-                <option value="Becky">Becky</option>
-            </select>
-            <!-- 年份選單回歸 -->
-            <select id="yearFilter">
-                <option value="">所有年份</option>
-            </select>
-        </div>
-
-        <div id="grid" class="grid-layout"></div>
+    <div class="filter-section fade-in">
+        <input type="text" id="searchInput" placeholder="搜尋地點或描述...">
+        <select id="celebrityFilter">
+            <option value="">所有藝人</option>
+            <option value="Freen & Becky">Freen & Becky</option>
+            <option value="Freen">Freen</option>
+            <option value="Becky">Becky</option>
+        </select>
+        <select id="dateFilter">
+            <option value="">所有年份</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+        </select>
     </div>
 
-    <script src="data.js"></script>
+    <main class="container">
+        <div id="grid" class="grid-layout"></div>
+    </main>
 
+    <script src="data.js"></script>
     <script>
         const grid = document.getElementById('grid');
-        const yearFilter = document.getElementById('yearFilter');
         let slideStates = {}; 
 
-        // 1. 自動生成年份選項
-        function initYearFilter() {
-            const years = [...new Set(FB_DATA.map(item => {
-                const dateMatch = item.date.match(/\d{4}/); // 抓取日期中的前四碼數字
-                return dateMatch ? dateMatch[0] : null;
-            }))].filter(Boolean).sort((a, b) => b - a); // 降序排列
-
-            years.forEach(year => {
-                const opt = document.createElement('option');
-                opt.value = year;
-                opt.textContent = year;
-                yearFilter.appendChild(opt);
-            });
-        }
-
+        // --- 新增：判斷媒體類型的函數 ---
         function renderMedia(url) {
-            if (!url) return '';
-            const safeUrl = url.replace(/ /g, '%20');
-            if (/\.(jpg|jpeg|png|gif|webp)$/i.test(safeUrl)) {
-                return `<img src="${safeUrl}" loading="lazy">`;
-            } else if (/\.(mp4|webm|mov)$/i.test(safeUrl)) {
-                return `<video controls playsinline preload="metadata">
-                            <source src="${safeUrl}" type="video/mp4">
-                        </video>`;
-            } else if (safeUrl.includes("youtube.com") || safeUrl.includes("youtu.be")) {
-                return `<iframe src="${safeUrl.replace("watch?v=", "embed/")}" allowfullscreen></iframe>`;
+            const videoExtensions = ['.mp4', '.webm', '.mov', '.ogg'];
+            const isVideo = videoExtensions.some(ext => url.toLowerCase().endsWith(ext));
+
+            if (isVideo) {
+                // muted 確保可以自動播放，controls 讓使用者可以按暫停/調整音量
+                return `<video src="${url}" controls muted playsinline class="carousel-video"></video>`;
+            } else {
+                return `<img src="${url}" alt="media">`;
             }
-            return `<div style="padding:20px; text-align:center; color:#999;">Format Error</div>`;
         }
 
         function renderData(data) {
             grid.innerHTML = '';
+            if (data.length === 0) {
+                grid.innerHTML = '<p style="text-align:center; color:#888; grid-column: 1/-1;">目前沒有相關資料...</p>';
+                return;
+            }
+
             data.forEach((item, index) => {
-                const slidesHtml = item.images.map(img => `<div class="carousel-item">${renderMedia(img.url)}</div>`).join('');
-                const tagsHtml = item.images.map((img, i) => `
-                    <div class="info-tag-container" style="display:${i===0?'flex':'none'}">
-                        <span class="info-tag"># ${img.platform || 'Social'}</span>
-                        <span class="info-tag"># ${img.category || 'Life'}</span>
+                // 使用 renderMedia 處理每一筆媒體
+                let slidesHtml = item.images.map(img => `
+                    <div class="carousel-item">${renderMedia(img.url)}</div>
+                `).join('');
+
+                let tagsHtml = item.images.map((img, i) => `
+                    <div class="info-tag-container" data-img-idx="${i}">
+                        <span class="info-tag"># ${img.platform || 'Archive'}</span>
+                        <span class="info-tag"># ${img.category || 'Media'}</span>
+                        <span class="info-tag">@ ${img.author || 'Admin'}</span>
                     </div>
                 `).join('');
 
                 grid.innerHTML += `
                     <div class="card fade-in">
                         <div class="carousel">
-                            <div class="carousel-inner" id="inner-${index}">${slidesHtml}</div>
+                            <div class="carousel-inner" id="inner-${index}">
+                                ${slidesHtml}
+                            </div>
                             ${item.images.length > 1 ? `
                                 <button class="carousel-btn prev" onclick="moveSlide(${index}, -1)">❮</button>
                                 <button class="carousel-btn next" onclick="moveSlide(${index}, 1)">❯</button>
                             ` : ''}
                         </div>
-                        <div class="card-content">
-                            <h3 class="card-title">${item.name}</h3>
-                            <p class="card-meta">${item.celebrity} | ${item.date}</p>
+                        <div style="margin-top:15px;">
+                            <h3 class="serif gold-text" style="margin:0;">${item.name}</h3>
+                            <p style="font-size:0.85rem; color:#888; margin:5px 0;">${item.celebrity} | ${item.date}</p>
                             <div id="tags-${index}">${tagsHtml}</div>
-                            <p class="card-desc">${item.desc}</p>
+                            <p style="margin-top:10px; font-size:0.95rem; color:var(--text);">${item.desc}</p>
                         </div>
-                    </div>`;
+                    </div>
+                `;
+                updateTagsVisibility(index, 0);
             });
         }
 
-        function moveSlide(idx, dir) {
-            const inner = document.getElementById(`inner-${idx}`);
+        // 輪播控制邏輯 (保持不變)
+        function moveSlide(itemIdx, dir) {
+            const inner = document.getElementById(`inner-${itemIdx}`);
             const total = inner.children.length;
-            slideStates[idx] = (slideStates[idx] || 0);
-            slideStates[idx] = (slideStates[idx] + dir + total) % total;
-            inner.style.transform = `translateX(-${slideStates[idx] * 100}%)`;
-            const tags = document.querySelectorAll(`#tags-${idx} .info-tag-container`);
-            tags.forEach((t, i) => t.style.display = (i === slideStates[idx] ? 'flex' : 'none'));
+            if (slideStates[itemIdx] === undefined) slideStates[itemIdx] = 0;
+            
+            // 如果切換時有影片正在播放，可以在這裡加入暫停邏輯 (選填)
+            const currentVideo = inner.children[slideStates[itemIdx]].querySelector('video');
+            if (currentVideo) currentVideo.pause();
+
+            slideStates[itemIdx] = (slideStates[itemIdx] + dir + total) % total;
+            inner.style.transform = `translateX(-${slideStates[itemIdx] * 100}%)`;
+            updateTagsVisibility(itemIdx, slideStates[itemIdx]);
         }
 
-        function applyFilter() {
-            const search = document.getElementById('searchInput').value.toLowerCase();
-            const celeb = document.getElementById('celebrityFilter').value;
-            const year = yearFilter.value;
+        function updateTagsVisibility(itemIdx, activeIdx) {
+            const tagGroups = document.querySelectorAll(`#tags-${itemIdx} .info-tag-container`);
+            tagGroups.forEach((group, i) => {
+                group.style.display = (i === activeIdx) ? 'flex' : 'none';
+            });
+        }
 
+        function filter() {
+            const s = document.getElementById('searchInput').value.toLowerCase();
+            const c = document.getElementById('celebrityFilter').value;
+            const d = document.getElementById('dateFilter').value;
+            
             const filtered = FB_DATA.filter(i => {
-                const matchSearch = (i.name + i.desc).toLowerCase().includes(search);
-                const matchCeleb = celeb === "" || i.celebrity === celeb;
-                const matchYear = year === "" || i.date.includes(year);
-                return matchSearch && matchCeleb && matchYear;
+                const dateStr = i.date ? i.date.toString() : "";
+                return (i.name.toLowerCase().includes(s) || i.desc.toLowerCase().includes(s)) &&
+                       (c === "" || i.celebrity === c) &&
+                       (d === "" || dateStr.includes(d));
             });
             renderData(filtered);
         }
 
-        document.querySelectorAll('input, select').forEach(el => el.addEventListener('input', applyFilter));
+        document.querySelectorAll('.filter-section input, .filter-section select').forEach(el => {
+            el.addEventListener('input', filter);
+        });
 
         window.onload = () => {
-            initYearFilter(); // 初始化年份
-            renderData(FB_DATA);
+            const urlParams = new URLSearchParams(window.location.search);
+            const searchKeyword = urlParams.get('search');
+            if (searchKeyword) {
+                document.getElementById('searchInput').value = searchKeyword;
+                filter();
+                window.history.replaceState({}, document.title, "archive.html");
+            } else {
+                renderData(FB_DATA);
+            }
         };
     </script>
 </body>
