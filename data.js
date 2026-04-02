@@ -29,17 +29,17 @@ const FB_DATA = [
         lat: 13.8235644,
         lng: 100.3663811,
         images: [
-            { url: "images/Wa Wa House/1.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/2.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/3.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/4.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/5.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/6.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/7.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/8.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/9.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/10.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
-            { url: "images/Wa Wa House/11.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" }
+            { url: "images/WaWa_House/1.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/WaWa_House/2.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/WaWa_House/3.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/WaWa_House/4.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/WaWa_House/5.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/WaWa_House/6.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/WaWa_House/7.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/WaWa_House/8.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/WaWa_House/9.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/WaWa_House/10.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" },
+            { url: "images/WaWa_House/11.png", platform: "Instagram,Twitter,Youtube", category: "act", author: "idolfactory" }
         ],
         mapUrl: "https://maps.app.goo.gl/9o7FQBSgev1kuDXE9",
         desc: "The Loyal Pin 拍攝地"
@@ -69,12 +69,12 @@ const FB_DATA = [
         lat: 13.9642237,
         lng: 100.5893724,
         images: [
-            { url: "images/COK Cream of The Koff/1.png", platform: "Instagram", category: "life", author: "Freen & Becky" },
-            { url: "images/COK Cream of The Koff/2.png", platform: "Instagram", category: "life", author: "Freen & Becky" },
-            { url: "images/COK Cream of The Koff/3.png", platform: "Instagram", category: "life", author: "Freen & Becky" },
-            { url: "images/COK Cream of The Koff/4.png", platform: "Instagram", category: "life", author: "Freen & Becky" },
-            { url: "images/COK Cream of The Koff/5.png", platform: "Instagram", category: "life", author: "Freen & Becky" },
-            { url: "images/COK Cream of The Koff/6.mp4", platform: "Instagram", category: "life", author: "Freen & Becky" }
+            { url: "images/COK/1.png", platform: "Instagram", category: "life", author: "Freen & Becky" },
+            { url: "images/COK/2.png", platform: "Instagram", category: "life", author: "Freen & Becky" },
+            { url: "images/COK/3.png", platform: "Instagram", category: "life", author: "Freen & Becky" },
+            { url: "images/COK/4.png", platform: "Instagram", category: "life", author: "Freen & Becky" },
+            { url: "images/COK/5.png", platform: "Instagram", category: "life", author: "Freen & Becky" },
+            { url: "images/COK/6.mp4", platform: "Instagram", category: "life", author: "Freen & Becky" }
         ],
         mapUrl: "https://maps.app.goo.gl/oH7iLpdCqxeg8GKw6",
         desc: "FB約會的咖啡廳"
