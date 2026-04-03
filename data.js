@@ -207,10 +207,10 @@ const FB_DATA = [
         lat: 12.7402635,
         lng: 99.9630389,
         images: [
-            { url: "images/Veranda Resort & Villas Hua Hin Cha Am/Freen_20211105-1.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/Veranda Resort & Villas Hua Hin Cha Am/Freen_20211105-2.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/Veranda Resort & Villas Hua Hin Cha Am/Freen_20211105-3.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/Veranda Resort & Villas Hua Hin Cha Am/Freen_20211105-4.jpg", platform: "Instagram", category: "life", author: "Freen" }
+            { url: "images/Veranda Resort & Villas Hua Hin Cha Am/Freen_20211105-1.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/Veranda Resort & Villas Hua Hin Cha Am/Freen_20211105-2.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/Veranda Resort & Villas Hua Hin Cha Am/Freen_20211105-3.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/Veranda Resort & Villas Hua Hin Cha Am/Freen_20211105-4.JPG", platform: "Instagram", category: "life", author: "Freen" }
         ],
         mapUrl: "https://maps.app.goo.gl/qQZCJzgbHKDedkYR7",
         desc: "生活照"
@@ -223,10 +223,10 @@ const FB_DATA = [
         lat: 14.5757155,
         lng: 101.357898,
         images: [
-            { url: "images/Oria Cafe Khaoyai/Freen_20250713-1.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/Oria Cafe Khaoyai/Freen_20250713-2.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/Oria Cafe Khaoyai/Freen_20250713-3.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/Oria Cafe Khaoyai/Freen_20250713-4.jpg", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/Oria Cafe Khaoyai/Freen_20250713-1.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/Oria Cafe Khaoyai/Freen_20250713-2.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/Oria Cafe Khaoyai/Freen_20250713-3.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/Oria Cafe Khaoyai/Freen_20250713-4.JPG", platform: "Instagram", category: "life", author: "Freen" },
             { url: "images/Oria Cafe Khaoyai/Freen_20250713-5.mp4", platform: "Instagram", category: "life", author: "Freen" }
         ],
         mapUrl: "https://maps.app.goo.gl/FNpUCLqK46fmmM3S9",
@@ -240,9 +240,9 @@ const FB_DATA = [
         lat: 14.5092576,
         lng: 101.3817984,
         images: [
-            { url: "images/EL Café Khaoyai/Freen_20210614-1.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/EL Café Khaoyai/Freen_20210614-2.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/EL Café Khaoyai/Freen_20210614-3.jpg", platform: "Instagram", category: "life", author: "Freen" }
+            { url: "images/EL Café Khaoyai/Freen_20210614-1.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/EL Café Khaoyai/Freen_20210614-2.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/EL Café Khaoyai/Freen_20210614-3.JPG", platform: "Instagram", category: "life", author: "Freen" }
         ],
         mapUrl: "https://maps.app.goo.gl/Nss4WtZqWjCyTAwDA",
         desc: "生活照"
@@ -255,13 +255,13 @@ const FB_DATA = [
         lat: 14.0904844,
         lng: 100.5120797,
         images: [
-            { url: "images/MODUS/Freen_20210303-1.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/MODUS/Freen_20210303-2.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/MODUS/Freen_20210303-3.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/MODUS/Freen_20210303-4.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/MODUS/Freen_20210411-1.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/MODUS/Freen_20210411-2.jpg", platform: "Instagram", category: "life", author: "Freen" },
-            { url: "images/MODUS/Freen_20210411-3.jpg", platform: "Instagram", category: "life", author: "Freen" }
+            { url: "images/MODUS/Freen_20210303-1.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/MODUS/Freen_20210303-2.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/MODUS/Freen_20210303-3.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/MODUS/Freen_20210303-4.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/MODUS/Freen_20210411-1.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/MODUS/Freen_20210411-2.JPG", platform: "Instagram", category: "life", author: "Freen" },
+            { url: "images/MODUS/Freen_20210411-3.JPG", platform: "Instagram", category: "life", author: "Freen" }
         ],
         mapUrl: "https://maps.app.goo.gl/K8d8ddMhDCJ8vmGNA",
         desc: "生活照"
