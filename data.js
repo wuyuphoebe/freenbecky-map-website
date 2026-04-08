@@ -653,19 +653,6 @@ const FB_DATA = [
         desc: "貼文已刪"
     },
     {
-        id: 38,
-        name: "曼谷當代藝術博物館",
-        celebrity: "Freen",
-        date: "2021/02/23",
-        lat: 13.852325,
-        lng: 100.5604343,
-        images: [
-            { url: "images/Freen/2021/曼谷當代藝術博物館/Freen_20210223-1.jpg", platform: "Instagram", category: "life", author: "Freen" }
-        ],
-        mapUrl: "https://maps.app.goo.gl/75K5s8rgm336ZA8R9",
-        desc: "貼文已刪"
-    },
-    {
         id: 39,
         name: "Mansion in Copenh",
         celebrity: "Freen",
