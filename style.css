@@ -9,7 +9,11 @@
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
-html { font-size: 16px; }
+html { 
+    font-size: 16px; 
+    /* 優化捲動流暢度 */
+    scroll-behavior: smooth; 
+}
 @media (max-width: 768px) { html { font-size: 15px; } }
 
 body {
@@ -18,6 +22,8 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     margin: 0;
     line-height: 1.6;
+    /* 避免圖片撐開容器導致橫向捲軸 */
+    overflow-x: hidden; 
 }
 
 /* --- 導覽列 --- */
@@ -72,11 +78,25 @@ nav {
     text-decoration: none;
     border-radius: 40px;
     font-weight: bold;
+    transition: all 0.3s ease;
+}
+.start-btn:hover {
+    background: var(--gold);
+    color: white;
 }
 
-/* --- 地圖彈窗樣式 (自適應長寬) --- */
+/* --- 地圖彈窗樣式 --- */
 .popup-container { text-align: center; width: 220px; }
-.popup-img { width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; display: block; }
+.popup-img { 
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 16 / 9; /* 預留空間，防止載入時高度跳動 */
+    background: #eee;    /* 載入前的佔位色 */
+    border-radius: 8px; 
+    margin-bottom: 8px; 
+    display: block; 
+    object-fit: cover;
+}
 .map-btn {
     display: block;
     background: var(--gold);
@@ -92,26 +112,34 @@ nav {
 .carousel {
     position: relative;
     width: 100%;
+    /* archive.html 有設定 aspect-ratio，這裡確保統一 */
+    aspect-ratio: 4 / 3; 
     overflow: hidden;
     border-radius: 12px;
-    background: #fdfdfd;
+    background: #f0f0f0; /* 預設灰底，圖片加載前不留白 */
 }
 .carousel-inner {
     display: flex;
+    height: 100%;
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* 優化渲染效能 */
+    will-change: transform; 
 }
 .carousel-item {
     min-width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.carousel-item img {
+.carousel-item img, .carousel-item video {
     width: 100%;
-    height: auto;
-    max-height: 450px;
-    object-fit: contain;
+    height: 100%;
+    object-fit: contain; /* 保持原圖比例不變形 */
+    /* 只有進入視窗才處理渲染 */
+    content-visibility: auto; 
 }
+
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -160,7 +188,14 @@ nav {
     gap: 30px;
     padding-bottom: 50px;
 }
-.card { background: var(--white); padding: 15px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.card { 
+    background: var(--white); 
+    padding: 15px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    /* 告訴瀏覽器這是一個獨立渲染單元，提升效能 */
+    contain: content; 
+}
 
 .fade-in { animation: fadeIn 0.8s ease-in; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }

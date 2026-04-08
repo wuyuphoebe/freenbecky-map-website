@@ -20,9 +20,10 @@
             border-radius: 12px;
             margin-bottom: 10px;
             border: 1px solid #eee;
+            background: #f0f0f0; /* 預設底色 */
         }
         .popup-title {
-            color: #d4af37; /* 金色 */
+            color: #d4af37;
             font-size: 1.1rem;
             margin: 5px 0;
             display: block;
@@ -51,11 +52,11 @@
             transition: 0.3s;
         }
         .btn-google {
-            background: #4285F4; /* Google 藍 */
+            background: #4285F4;
             color: white !important;
         }
         .btn-more {
-            background: #d4af37; /* 回憶錄金 */
+            background: #d4af37;
             color: white !important;
         }
         .popup-btn:hover { opacity: 0.8; }
@@ -84,31 +85,38 @@
     <script src="data.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        const map = L.map('map').setView([13.7563, 100.5018], 12);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        // 初始化地圖，開啟首屏時儘量精簡
+        const map = L.map('map', {
+            preferCanvas: true // 使用 Canvas 渲染 Marker 效能更好
+        }).setView([13.7563, 100.5018], 12);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
 
         FB_DATA.forEach(item => {
             const marker = L.marker([item.lat, item.lng]).addTo(map);
             
-            // 安全取得第一張圖片
-            const firstImg = (item.images && item.images.length > 0) ? item.images[0].url : 'placeholder.jpg';
-            
-            // 生成跳轉到 Archive 的網址，並帶上地點名稱作為搜尋參數
-            const archiveJumpUrl = `archive.html?search=${encodeURIComponent(item.name)}`;
+            // 重要優化：動態加載內容
+            // 我們不在 marker 初始化時就把 <img> 寫死進去，而是等使用者「點擊」才載入
+            marker.on('click', function() {
+                const firstImgUrl = (item.images && item.images.length > 0) ? item.images[0].url : 'placeholder.jpg';
+                const safeImgUrl = firstImgUrl.split('/').map(segment => encodeURIComponent(segment)).join('/');
+                const archiveJumpUrl = `archive.html?search=${encodeURIComponent(item.name)}`;
 
-            const popupContent = `
-                <div class="popup-container">
-                    <img src="${firstImg}" class="popup-img">
-                    <span class="popup-title">${item.name}</span>
-                    <span class="popup-info">${item.celebrity} | ${item.date}</span>
-                    <div class="popup-btn-group">
-                        <a href="${item.mapUrl}" target="_blank" class="popup-btn btn-google">GOOGLE MAPS</a>
-                        <a href="${archiveJumpUrl}" class="popup-btn btn-more">VIEW MORE</a>
+                const popupContent = `
+                    <div class="popup-container">
+                        <img src="${safeImgUrl}" class="popup-img" loading="lazy">
+                        <span class="popup-title">${item.name}</span>
+                        <span class="popup-info">${item.celebrity} | ${item.date}</span>
+                        <div class="popup-btn-group">
+                            <a href="${item.mapUrl}" target="_blank" class="popup-btn btn-google">GOOGLE MAPS</a>
+                            <a href="${archiveJumpUrl}" class="popup-btn btn-more">VIEW MORE</a>
+                        </div>
                     </div>
-                </div>
-            `;
-
-            marker.bindPopup(popupContent);
+                `;
+                marker.bindPopup(popupContent).openPopup();
+            });
         });
     </script>
 </body>

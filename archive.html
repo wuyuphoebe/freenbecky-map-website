@@ -93,7 +93,7 @@
         const yearFilter = document.getElementById('yearFilter');
         let slideStates = {}; 
 
-        // 1. 初始化年份選單 (修正抓取邏輯)
+        // 1. 初始化年份選單
         function initYearFilter() {
             const years = [...new Set(FB_DATA.map(item => {
                 const dateStr = String(item.date);
@@ -101,6 +101,7 @@
                 return match ? match[0] : null;
             }))].filter(Boolean).sort((a, b) => b - a);
 
+            yearFilter.innerHTML = '<option value="">所有年份</option>'; // 清空並重置
             years.forEach(year => {
                 const opt = document.createElement('option');
                 opt.value = year;
@@ -109,20 +110,19 @@
             });
         }
 
-        // 2. 核心媒體渲染 (解決空格、大小寫、影片聲音問題)
+        // 2. 核心媒體渲染 (優化：加上影片 preload="none" 與 iframe lazy)
         function renderMedia(url) {
             if (!url) return '';
             
-            // 重要：GitHub 路徑安全化處理
             const safeUrl = url.split('/').map(segment => encodeURIComponent(segment)).join('/');
             
-            // 圖片 (支援大寫 PNG)
+            // 圖片
             if (/\.(jpg|jpeg|png|gif|webp|PNG)$/i.test(safeUrl)) {
                 return `<img src="${safeUrl}" loading="lazy" alt="FB Archive Memory">`;
             } 
-            // 影片 (移除 muted 確保有聲音)
+            // 影片 - 改為 preload="none" 以節省流量與提升載入速度
             else if (/\.(mp4|webm|mov)$/i.test(safeUrl)) {
-                return `<video controls playsinline preload="metadata">
+                return `<video controls playsinline preload="none">
                             <source src="${safeUrl}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>`;
@@ -130,23 +130,23 @@
             // YouTube
             else if (safeUrl.includes("youtube.com") || safeUrl.includes("youtu.be")) {
                 const embedUrl = safeUrl.replace("watch?v=", "embed/");
-                return `<iframe src="${embedUrl}" allowfullscreen></iframe>`;
+                return `<iframe src="${embedUrl}" allowfullscreen loading="lazy"></iframe>`;
             }
             return `<div style="padding:20px; text-align:center; color:#999;">Format Error</div>`;
         }
 
-        // 3. 渲染網格資料
+        // 3. 渲染網格資料 (優化：使用字串拼接一次寫入 DOM，減少重繪)
         function renderData(data) {
-            grid.innerHTML = '';
             if (data.length === 0) {
                 grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:50px; color:#999;">沒有找到相關的回憶。</div>';
                 return;
             }
 
+            let htmlString = ''; // 用變數儲存，避免多次 DOM 操作
+
             data.forEach((item, index) => {
                 const slidesHtml = item.images.map(img => `<div class="carousel-item">${renderMedia(img.url)}</div>`).join('');
                 
-                // 標籤內容跟隨圖片切換
                 const tagsHtml = item.images.map((img, i) => `
                     <div class="info-tag-container tag-group-${index}" style="display:${i === 0 ? 'flex' : 'none'}">
                         <span class="info-tag"># ${img.platform || 'Social'}</span>
@@ -155,7 +155,7 @@
                     </div>
                 `).join('');
 
-                grid.innerHTML += `
+                htmlString += `
                     <div class="card fade-in">
                         <div class="carousel">
                             <div class="carousel-inner" id="inner-${index}">${slidesHtml}</div>
@@ -172,6 +172,8 @@
                         </div>
                     </div>`;
             });
+
+            grid.innerHTML = htmlString;
         }
 
         // 4. 輪播控制
@@ -205,7 +207,7 @@
             renderData(filtered);
         }
 
-        // 監聽輸入與地圖跳轉
+        // 監聽事件
         document.querySelectorAll('input, select').forEach(el => el.addEventListener('change', applyFilter));
         document.getElementById('searchInput').addEventListener('input', applyFilter);
 
@@ -220,14 +222,13 @@
         window.onload = () => {
             initYearFilter();
             
-            // 處理地圖傳來的搜尋參數
             const urlParams = new URLSearchParams(window.location.search);
             const searchParam = urlParams.get('search');
             if (searchParam) {
                 document.getElementById('searchInput').value = decodeURIComponent(searchParam);
             }
             
-            applyFilter(); // 初始渲染
+            applyFilter(); 
         };
     </script>
 </body>

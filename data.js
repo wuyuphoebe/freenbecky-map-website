@@ -640,7 +640,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 38,
+        id: 39,
         name: "曼谷當代藝術博物館",
         celebrity: "Freen",
         date: "2021/02/23",
@@ -653,7 +653,7 @@ const FB_DATA = [
         desc: "貼文已刪"
     },
     {
-        id: 39,
+        id: 40,
         name: "Mansion in Copenh",
         celebrity: "Freen",
         date: "2025/08/12",
@@ -673,7 +673,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 40,
+        id: 41,
         name: "Flowers in the window BKK",
         celebrity: "Freen",
         date: "2025/06/09",
@@ -695,7 +695,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 41,
+        id: 42,
         name: "B-Story Garden Café & Restaurants",
         celebrity: "Freen",
         date: "2019/12/28",
@@ -708,7 +708,7 @@ const FB_DATA = [
         desc: "貼文已刪"
     },
     {
-        id: 42,
+        id: 43,
         name: "巧克力村",
         celebrity: "Freen",
         date: "2021/01/18,2021/02/27",
@@ -732,7 +732,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 43,
+        id: 44,
         name: "whispering cafe",
         celebrity: "Freen",
         date: "2020/12/20",
@@ -746,7 +746,7 @@ const FB_DATA = [
         desc: "貼文已刪"
     },
     {
-        id: 44,
+        id: 45,
         name: "wannaknowyoumore cafe",
         celebrity: "Freen",
         date: "2022/02/12",
@@ -764,7 +764,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 45,
+        id: 46,
         name: "Shoo We Doo Wa Cafe",
         celebrity: "Freen",
         date: "2021/09/04",
@@ -780,7 +780,7 @@ const FB_DATA = [
         desc: "店外正在整修，店內可以坐"
     },
     {
-        id: 46,
+        id: 47,
         name: "Jodd Fairs",
         celebrity: "Freen",
         date: "2022/03/04",
@@ -793,7 +793,7 @@ const FB_DATA = [
         desc: "貼文已刪"
     },
     {
-        id: 47,
+        id: 48,
         name: "Ploysang Studio",
         celebrity: "Freen",
         date: "2019/12/16,2020/10/08,2020/10/24",
@@ -816,7 +816,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 48,
+        id: 49,
         name: "IDOLFACTORY",
         celebrity: "Freen & Becky",
         date: "2021",
@@ -829,7 +829,7 @@ const FB_DATA = [
         desc: "前公司"
     },
     {
-        id: 49,
+        id: 50,
         name: "Thewes Pier",
         celebrity: "Becky",
         date: "202506",
@@ -846,7 +846,7 @@ const FB_DATA = [
         desc: "美麗佳人 marieclairetw 2025/06 雜誌拍攝地"
     },
     {
-        id: 50,
+        id: 51,
         name: "普拉蘇門堡壘",
         celebrity: "Becky",
         date: "202506",
@@ -861,7 +861,7 @@ const FB_DATA = [
         desc: "美麗佳人 marieclairetw 2025/06 雜誌拍攝地"
     },
     {
-        id: 51,
+        id: 52,
         name: "皇家田廣場",
         celebrity: "Freen",
         date: "2025/05/18",
@@ -878,7 +878,7 @@ const FB_DATA = [
         desc: "KAWS活動"
     },
     {
-        id: 52,
+        id: 53,
         name: "Din Restaurant and Jazz Bar",
         celebrity: "Freen",
         date: "2023/06/13",
@@ -894,7 +894,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 53,
+        id: 54,
         name: "Ballad Coffee Bar",
         celebrity: "Becky",
         date: "2025/06/10",
@@ -917,7 +917,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 54,
+        id: 55,
         name: "PAULETTE BKK",
         celebrity: "Becky",
         date: "2023/03/01",
@@ -937,7 +937,7 @@ const FB_DATA = [
         desc: "uniqlo 品牌代言拍攝地"
     },
     {
-        id: 55,
+        id: 56,
         name: "拉查波比托寺",
         celebrity: "Freen",
         date: "2020/10/31",
@@ -952,7 +952,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 56,
+        id: 57,
         name: "The Jam Factory",
         celebrity: "Freen",
         date: "2020/10/10",
@@ -965,7 +965,7 @@ const FB_DATA = [
         desc: "貼文已刪"
     },
     {
-        id: 57,
+        id: 58,
         name: "River City Bangkok",
         celebrity: "Freen",
         date: "2020/10/20,2020/11/04,2023/04/06",
@@ -985,7 +985,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 58,
+        id: 59,
         name: "Pata Plantation Block 28",
         celebrity: "Freen",
         date: "2023/01/03",
@@ -1002,7 +1002,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 59,
+        id: 60,
         name: "LOEWY.BKK",
         celebrity: "Freen",
         date: "2025/08/07,2025/08/08",
@@ -1016,7 +1016,7 @@ const FB_DATA = [
         desc: "2025 8/7-8/8 Freen生日應援展"
     },
     {
-        id: 60,
+        id: 61,
         name: "Stock.Room",
         celebrity: "Becky",
         date: "2025/07/12",
@@ -1037,7 +1037,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 61,
+        id: 62,
         name: "CONTENTO",
         celebrity: "Freen",
         date: "2023/10/14",
@@ -1053,7 +1053,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 62,
+        id: 63,
         name: "STOCKROOM",
         celebrity: "Becky",
         date: "2025/06/22",
@@ -1081,7 +1081,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 63,
+        id: 64,
         name: "曼谷市立藝術文化中心",
         celebrity: "Freen",
         date: "2022/04/15",
@@ -1107,7 +1107,7 @@ const FB_DATA = [
         desc: ""
     },
     {
-        id: 64,
+        id: 65,
         name: "MBK CENTER",
         celebrity: "Freen & Becky",
         date: "2022/08/14,2022/12/10",
@@ -1127,7 +1127,7 @@ const FB_DATA = [
         desc: "Freen 2022/08/14生日會,Bec 2022/12/10生日會"
     },
     {
-        id: 65,
+        id: 66,
         name: "LV The Place曼谷-路易威登咖啡",
         celebrity: "Freen",
         date: "2024/09/16",
