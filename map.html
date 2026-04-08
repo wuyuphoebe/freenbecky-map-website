@@ -7,12 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
-        /* Popup 內容器樣式 */
-        .popup-container {
-            width: 220px;
-            padding: 5px;
-            text-align: center;
-        }
+        .popup-container { width: 220px; padding: 5px; text-align: center; }
         .popup-img {
             width: 100%;
             height: 130px;
@@ -20,48 +15,15 @@
             border-radius: 12px;
             margin-bottom: 10px;
             border: 1px solid #eee;
-            background: #f0f0f0; /* 預設底色 */
+            background: #000; /* 影片底色通常設為黑 */
         }
-        .popup-title {
-            color: #d4af37;
-            font-size: 1.1rem;
-            margin: 5px 0;
-            display: block;
-            font-weight: bold;
-        }
-        .popup-info {
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 12px;
-            display: block;
-        }
-        /* 按鈕群組樣式 */
-        .popup-btn-group {
-            display: flex;
-            gap: 8px;
-            margin-top: 5px;
-        }
-        .popup-btn {
-            flex: 1;
-            padding: 8px 0;
-            font-size: 0.75rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            text-align: center;
-            transition: 0.3s;
-        }
-        .btn-google {
-            background: #4285F4;
-            color: white !important;
-        }
-        .btn-more {
-            background: #d4af37;
-            color: white !important;
-        }
+        .popup-title { color: #d4af37; font-size: 1.1rem; margin: 5px 0; display: block; font-weight: bold; }
+        .popup-info { font-size: 0.85rem; color: #666; margin-bottom: 12px; display: block; }
+        .popup-btn-group { display: flex; gap: 8px; margin-top: 5px; }
+        .popup-btn { flex: 1; padding: 8px 0; font-size: 0.75rem; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; transition: 0.3s; }
+        .btn-google { background: #4285F4; color: white !important; }
+        .btn-more { background: #d4af37; color: white !important; }
         .popup-btn:hover { opacity: 0.8; }
-        
-        /* 修正 Leaflet 預設容器樣式 */
         .leaflet-popup-content-wrapper { border-radius: 15px; }
     </style>
 </head>
@@ -76,6 +38,7 @@
             </div>
         </div>
     </nav>
+
     <main class="container">
         <div style="margin: 20px 0; border: 1px solid #d4af37; border-radius: 20px; overflow: hidden; height: 75vh;">
             <div id="map" style="height: 100%; width: 100%;"></div>
@@ -85,38 +48,50 @@
     <script src="data.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // 初始化地圖，開啟首屏時儘量精簡
-        const map = L.map('map', {
-            preferCanvas: true // 使用 Canvas 渲染 Marker 效能更好
-        }).setView([13.7563, 100.5018], 12);
+        const map = L.map('map', { preferCanvas: true }).setView([13.7563, 100.5018], 12);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap'
         }).addTo(map);
 
         FB_DATA.forEach(item => {
-            const marker = L.marker([item.lat, item.lng]).addTo(map);
+            const firstFile = (item.images && item.images.length > 0) ? item.images[0].url : 'placeholder.jpg';
+            const safeUrl = firstFile.split('/').map(segment => encodeURIComponent(segment)).join('/');
             
-            // 重要優化：動態加載內容
-            // 我們不在 marker 初始化時就把 <img> 寫死進去，而是等使用者「點擊」才載入
-            marker.on('click', function() {
-                const firstImgUrl = (item.images && item.images.length > 0) ? item.images[0].url : 'placeholder.jpg';
-                const safeImgUrl = firstImgUrl.split('/').map(segment => encodeURIComponent(segment)).join('/');
-                const archiveJumpUrl = `archive.html?search=${encodeURIComponent(item.name)}`;
+            // 判斷副檔名
+            const isVideo = safeUrl.toLowerCase().endsWith('.mp4') || safeUrl.toLowerCase().endsWith('.mov');
+            
+            // 建立媒體 HTML
+            let mediaHtml = "";
+            if (isVideo) {
+                // 影片增加靜音與滑鼠移入播放
+                mediaHtml = `<video src="${safeUrl}" class="popup-img" muted playsinline loop onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"></video>`;
+            } else {
+                mediaHtml = `<img src="${safeUrl}" class="popup-img" loading="lazy">`;
+            }
 
-                const popupContent = `
-                    <div class="popup-container">
-                        <img src="${safeImgUrl}" class="popup-img" loading="lazy">
-                        <span class="popup-title">${item.name}</span>
-                        <span class="popup-info">${item.celebrity} | ${item.date}</span>
-                        <div class="popup-btn-group">
-                            <a href="${item.mapUrl}" target="_blank" class="popup-btn btn-google">GOOGLE MAPS</a>
-                            <a href="${archiveJumpUrl}" class="popup-btn btn-more">VIEW MORE</a>
-                        </div>
+            const archiveJumpUrl = `archive.html?search=${encodeURIComponent(item.name)}`;
+
+            const popupContent = `
+                <div class="popup-container">
+                    ${mediaHtml}
+                    <span class="popup-title">${item.name}</span>
+                    <span class="popup-info">${item.celebrity} | ${item.date}</span>
+                    <div class="popup-btn-group">
+                        <a href="${item.mapUrl}" target="_blank" class="popup-btn btn-google">GOOGLE MAPS</a>
+                        <a href="${archiveJumpUrl}" class="popup-btn btn-more">VIEW MORE</a>
                     </div>
-                `;
-                marker.bindPopup(popupContent).openPopup();
-            });
+                </div>
+            `;
+
+            L.marker([item.lat, item.lng]).addTo(map).bindPopup(popupContent);
+        });
+
+        // 彈窗開啟時自動將地圖中心點往上移，避免彈窗被切掉
+        map.on('popupopen', function(e) {
+            const px = map.project(e.target._popup._latlng); 
+            px.y -= e.target._popup._container.clientHeight/2; 
+            map.panTo(map.unproject(px), {animate: true});
         });
     </script>
 </body>
