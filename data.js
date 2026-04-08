@@ -3011,7 +3011,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 69,
+        "id": 68,
         "name": "Ploysang Studio",
         "celebrity": "Freen",
         "date": "2019-12-26",
@@ -3020,6 +3020,24 @@ const FB_DATA = [
         "mapUrl": "https://maps.app.goo.gl/zLYS4H6LinsLetRP9",
         "desc": "",
         "images": [
+            {
+                "url": "images/Freen/2020/Ploysang Studio/Freen_20191226-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2020/Ploysang Studio/Freen_20191226-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2020/Ploysang Studio/Freen_20191226-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-1.jpg",
                 "platform": "Instagram",
@@ -3072,66 +3090,6 @@ const FB_DATA = [
     },
     {
         "id": 69,
-        "name": "Ploysang Studio",
-        "celebrity": "Freen",
-        "date": "2019-12-26",
-        "lat": 13.7748746,
-        "lng": 100.6120016,
-        "mapUrl": "https://maps.app.goo.gl/zLYS4H6LinsLetRP9",
-        "desc": "",
-        "images": [
-            {
-                "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-1.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-2.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-3.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-4.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-5.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-6.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-7.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-8.mp4",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            }
-        ]
-    },
-    {
-        "id": 70,
         "name": "ausaa",
         "celebrity": "Freen",
         "date": "2019-12-11",
