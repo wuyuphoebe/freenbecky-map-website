@@ -15,7 +15,7 @@
             border-radius: 12px;
             margin-bottom: 10px;
             border: 1px solid #eee;
-            background: #000; /* 影片底色通常設為黑 */
+            background: #000;
         }
         .popup-title { color: #d4af37; font-size: 1.1rem; margin: 5px 0; display: block; font-weight: bold; }
         .popup-info { font-size: 0.85rem; color: #666; margin-bottom: 12px; display: block; }
@@ -40,7 +40,7 @@
     </nav>
 
     <main class="container">
-        <div style="margin: 20px 0; border: 1px solid #d4af37; border-radius: 20px; overflow: hidden; height: 75vh;">
+        <div style="margin: 20px 0; border: 1px solid #d4af37; border-radius: 20px; overflow: hidden; height: 75vh; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
             <div id="map" style="height: 100%; width: 100%;"></div>
         </div>
     </main>
@@ -48,6 +48,7 @@
     <script src="data.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
+        // 使用 preferCanvas 提升大量標記時的效能
         const map = L.map('map', { preferCanvas: true }).setView([13.7563, 100.5018], 12);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -55,16 +56,15 @@
         }).addTo(map);
 
         FB_DATA.forEach(item => {
-            const firstFile = (item.images && item.images.length > 0) ? item.images[0].url : 'placeholder.jpg';
+            const firstFile = (item.images && item.images.length > 0) ? item.images[0].url : '';
+            if (!firstFile) return;
+
             const safeUrl = firstFile.split('/').map(segment => encodeURIComponent(segment)).join('/');
-            
-            // 判斷副檔名
             const isVideo = safeUrl.toLowerCase().endsWith('.mp4') || safeUrl.toLowerCase().endsWith('.mov');
             
-            // 建立媒體 HTML
             let mediaHtml = "";
             if (isVideo) {
-                // 影片增加靜音與滑鼠移入播放
+                // 影片預設靜音、不自動播放，節省流量
                 mediaHtml = `<video src="${safeUrl}" class="popup-img" muted playsinline loop onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"></video>`;
             } else {
                 mediaHtml = `<img src="${safeUrl}" class="popup-img" loading="lazy">`;
@@ -87,7 +87,6 @@
             L.marker([item.lat, item.lng]).addTo(map).bindPopup(popupContent);
         });
 
-        // 彈窗開啟時自動將地圖中心點往上移，避免彈窗被切掉
         map.on('popupopen', function(e) {
             const px = map.project(e.target._popup._latlng); 
             px.y -= e.target._popup._container.clientHeight/2; 
