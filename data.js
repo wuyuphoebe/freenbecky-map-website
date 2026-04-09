@@ -589,6 +589,78 @@ const FB_DATA = [
     },
     {
         "id": 10,
+        "name": "Thewes Pier",
+        "celebrity": "Becky",
+        "date": "2025-06",
+        "lat": 13.7719634,
+        "lng": 100.5002479,
+        "mapUrl": "https://maps.app.goo.gl/BDiM3YZpS1UeU4Ln9",
+        "desc": "《美麗佳人》2025/06 雜誌拍攝地點",
+        "images": [
+            {
+                "url": "images/Becky/2025/Thewes Pier/Becky_2025-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Becky"
+            },
+            {
+                "url": "images/Becky/2025/Thewes Pier/Becky_2025-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Becky"
+            },
+            {
+                "url": "images/Becky/2025/Thewes Pier/Becky_2025-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Becky"
+            },
+            {
+                "url": "images/Becky/2025/Thewes Pier/Becky_2025-4.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Becky"
+            },
+            {
+                "url": "images/Becky/2025/Thewes Pier/Becky_2025-5.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Becky"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "普拉蘇門堡壘",
+        "celebrity": "Becky",
+        "date": "2025-06",
+        "lat": 13.7640004,
+        "lng": 100.4955373,
+        "mapUrl": "https://maps.app.goo.gl/GVZpStL5Norj1Ukz9",
+        "desc": "《美麗佳人》2025/06 雜誌拍攝地點",
+        "images": [
+            {
+                "url": "images/Becky/2025/普拉蘇門堡壘/Becky_2025-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Becky"
+            },
+            {
+                "url": "images/Becky/2025/普拉蘇門堡壘/Becky_2025-2.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Becky"
+            },
+            {
+                "url": "images/Becky/2025/普拉蘇門堡壘/Becky_2025-3.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Becky"
+            }
+        ]
+    },
+    {
+        "id": 12,
         "name": "皇家田廣場",
         "celebrity": "Freen",
         "date": "2025-05-18",
@@ -600,37 +672,37 @@ const FB_DATA = [
             {
                 "url": "images/Freen/2025/皇家田廣場/Freen_20250518-1.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2025/皇家田廣場/Freen_20250518-2.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2025/皇家田廣場/Freen_20250518-3.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2025/皇家田廣場/Freen_20250518-4.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2025/皇家田廣場/Freen_20250518-5.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Freen"
             }
         ]
     },
     {
-        "id": 11,
+        "id": 13,
         "name": "Curious Cafe",
         "celebrity": "Freen & Becky",
         "date": "2025-03-26",
@@ -720,7 +792,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 12,
+        "id": 14,
         "name": "PAULETTE BKK",
         "celebrity": "Becky",
         "date": "2025-03-01",
@@ -732,121 +804,49 @@ const FB_DATA = [
             {
                 "url": "images/Becky/2025/PAULETTE BKK/Becky_20250301-1.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Becky"
             },
             {
                 "url": "images/Becky/2025/PAULETTE BKK/Becky_20250301-2.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Becky"
             },
             {
                 "url": "images/Becky/2025/PAULETTE BKK/Becky_20250301-3.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Becky"
             },
             {
                 "url": "images/Becky/2025/PAULETTE BKK/Becky_20250301-4.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Becky"
             },
             {
                 "url": "images/Becky/2025/PAULETTE BKK/Becky_20250301-5.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Becky"
             },
             {
                 "url": "images/Becky/2025/PAULETTE BKK/Becky_20250301-6.mp4",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Becky"
             },
             {
                 "url": "images/Becky/2025/PAULETTE BKK/Becky_20250301-7.mp4",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Becky"
             },
             {
                 "url": "images/Becky/2025/PAULETTE BKK/Becky_20250301-8.mp4",
                 "platform": "Instagram",
-                "category": "Activity",
-                "author": "Becky"
-            }
-        ]
-    },
-    {
-        "id": 13,
-        "name": "Thewes Pier",
-        "celebrity": "Becky",
-        "date": "2025-06",
-        "lat": 13.7719634,
-        "lng": 100.5002479,
-        "mapUrl": "https://maps.app.goo.gl/BDiM3YZpS1UeU4Ln9",
-        "desc": "《美麗佳人》2025/06 雜誌拍攝地點",
-        "images": [
-            {
-                "url": "images/Becky/2025/Thewes Pier/Becky_2025-1.jpg",
-                "platform": "Instagram",
-                "category": "Magazine",
-                "author": "Becky"
-            },
-            {
-                "url": "images/Becky/2025/Thewes Pier/Becky_2025-2.jpg",
-                "platform": "Instagram",
-                "category": "Magazine",
-                "author": "Becky"
-            },
-            {
-                "url": "images/Becky/2025/Thewes Pier/Becky_2025-3.jpg",
-                "platform": "Instagram",
-                "category": "Magazine",
-                "author": "Becky"
-            },
-            {
-                "url": "images/Becky/2025/Thewes Pier/Becky_2025-4.mp4",
-                "platform": "Instagram",
-                "category": "Magazine",
-                "author": "Becky"
-            },
-            {
-                "url": "images/Becky/2025/Thewes Pier/Becky_2025-5.mp4",
-                "platform": "Instagram",
-                "category": "Magazine",
-                "author": "Becky"
-            }
-        ]
-    },
-    {
-        "id": 14,
-        "name": "普拉蘇門堡壘",
-        "celebrity": "Becky",
-        "date": "2025-06",
-        "lat": 13.7640004,
-        "lng": 100.4955373,
-        "mapUrl": "https://maps.app.goo.gl/GVZpStL5Norj1Ukz9",
-        "desc": "《美麗佳人》2025/06 雜誌拍攝地點",
-        "images": [
-            {
-                "url": "images/Becky/2025/普拉蘇門堡壘/Becky_2025-1.jpg",
-                "platform": "Instagram",
-                "category": "Magazine",
-                "author": "Becky"
-            },
-            {
-                "url": "images/Becky/2025/普拉蘇門堡壘/Becky_2025-2.mp4",
-                "platform": "Instagram",
-                "category": "Magazine",
-                "author": "Becky"
-            },
-            {
-                "url": "images/Becky/2025/普拉蘇門堡壘/Becky_2025-3.mp4",
-                "platform": "Instagram",
-                "category": "Magazine",
+                "category": "Life",
                 "author": "Becky"
             }
         ]
@@ -864,37 +864,37 @@ const FB_DATA = [
             {
                 "url": "images/FreenBecky/2024/大鞦韆/FreenBecky_20241011-1.png",
                 "platform": "Instagram",
-                "category": "MV",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/大鞦韆/FreenBecky_20241011-2.png",
-                "platform": "Instagram,YouTube",
-                "category": "MV",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/大鞦韆/FreenBecky_20241011-3.png",
-                "platform": "Instagram,YouTube",
-                "category": "MV",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/大鞦韆/FreenBecky_20241011-4.png",
-                "platform": "Instagram,YouTube",
-                "category": "MV",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/大鞦韆/FreenBecky_20241011-5.png",
-                "platform": "Instagram,YouTube",
-                "category": "MV",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/大鞦韆/FreenBecky_20241011-6.mp4",
-                "platform": "Instagram,YouTube",
-                "category": "MV",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
@@ -912,31 +912,49 @@ const FB_DATA = [
             {
                 "url": "images/Freen/2024/LV The Place曼谷-路易威登咖啡/Freen_20240916-1.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2024/LV The Place曼谷-路易威登咖啡/Freen_20240916-2.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2024/LV The Place曼谷-路易威登咖啡/Freen_20240916-3.jpg",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2024/LV The Place曼谷-路易威登咖啡/Freen_20240916-4.mp4",
                 "platform": "Instagram",
-                "category": "Activity",
+                "category": "Life",
                 "author": "Freen"
             }
         ]
     },
     {
         "id": 17,
+        "name": "Butterbear Cafe EmSphere",
+        "celebrity": "Freen",
+        "date": "2024-06-02",
+        "lat": 13.7322454,
+        "lng": 100.5667476,
+        "mapUrl": "https://maps.app.goo.gl/BuTXmMhARqhH2K7B8",
+        "desc": "Instagram Story",
+        "images": [
+            {
+                "url": "images/Freen/2024/Butterbear Cafe EmSphere/Freen_20240602-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            }
+        ]
+    },
+    {
+        "id": 18,
         "name": "BLOCK I",
         "celebrity": "Becky",
         "date": "2024-05-26",
@@ -978,7 +996,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 18,
+        "id": 19,
         "name": "KOPI KUAPA cafe",
         "celebrity": "Freen & Becky",
         "date": "2024",
@@ -990,25 +1008,25 @@ const FB_DATA = [
             {
                 "url": "images/FreenBecky/2024/KOPI KUAPA cafe/FreenBecky_2024-1.jpg",
                 "platform": "Instagram",
-                "category": "Movie",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/KOPI KUAPA cafe/FreenBecky_2024-2.jpg",
                 "platform": "Instagram",
-                "category": "Movie",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/KOPI KUAPA cafe/FreenBecky_2024-3.jpg",
                 "platform": "Instagram",
-                "category": "Movie",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
     },
     {
-        "id": 19,
+        "id": 20,
         "name": "Manhattan Bridge Arch and Colonnade",
         "celebrity": "Freen & Becky",
         "date": "2024",
@@ -1020,13 +1038,13 @@ const FB_DATA = [
             {
                 "url": "images/FreenBecky/2024/Manhattan Bridge Arch and Colonnade/FreenBecky_2024-1.jpeg",
                 "platform": "Instagram",
-                "category": "Movie",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
     },
     {
-        "id": 20,
+        "id": 21,
         "name": "Times Square",
         "celebrity": "Freen & Becky",
         "date": "2024",
@@ -1038,19 +1056,19 @@ const FB_DATA = [
             {
                 "url": "images/FreenBecky/2024/Times Square/FreenBecky_2024-1.jpg",
                 "platform": "Instagram",
-                "category": "Movie",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Times Square/FreenBecky_2024-2.jpg",
                 "platform": "Instagram",
-                "category": "Movie",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
     },
     {
-        "id": 21,
+        "id": 22,
         "name": "Udom Thai",
         "celebrity": "Freen & Becky",
         "date": "2024",
@@ -1062,19 +1080,19 @@ const FB_DATA = [
             {
                 "url": "images/FreenBecky/2024/Udom Thai/FreenBecky_2024-1.png",
                 "platform": "Instagram",
-                "category": "Movie",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Udom Thai/FreenBecky_2024-2.png",
                 "platform": "Instagram",
-                "category": "Movie",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
     },
     {
-        "id": 22,
+        "id": 23,
         "name": "Wa Wa House",
         "celebrity": "Freen & Becky",
         "date": "2024",
@@ -1086,67 +1104,67 @@ const FB_DATA = [
             {
                 "url": "images/FreenBecky/2024/Wa Wa House/FreenBecky_2024-1.jpg",
                 "platform": "Instagram",
-                "category": "Series",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Wa Wa House/FreenBecky_2024-10.jpg",
                 "platform": "Instagram",
-                "category": "Series",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Wa Wa House/FreenBecky_2024-2.jpg",
                 "platform": "Instagram",
-                "category": "Series",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Wa Wa House/FreenBecky_2024-3.jpg",
                 "platform": "Instagram",
-                "category": "Series",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Wa Wa House/FreenBecky_2024-4.jpg",
                 "platform": "Instagram",
-                "category": "Series",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Wa Wa House/FreenBecky_2024-5.jpg",
                 "platform": "Instagram",
-                "category": "Series",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Wa Wa House/FreenBecky_2024-6.jpg",
                 "platform": "Instagram",
-                "category": "Series",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Wa Wa House/FreenBecky_2024-7.jpg",
                 "platform": "Instagram",
-                "category": "Series",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Wa Wa House/FreenBecky_2024-8.jpg",
                 "platform": "Instagram",
-                "category": "Series",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2024/Wa Wa House/FreenBecky_2024-9.jpg",
                 "platform": "Instagram",
-                "category": "Series",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
     },
     {
-        "id": 23,
+        "id": 24,
         "name": "NYC BROOKLYN BRIDGE",
         "celebrity": "Becky",
         "date": "2023-12-04",
@@ -1164,7 +1182,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 24,
+        "id": 25,
         "name": "Also Cafe Chiangmai",
         "celebrity": "Freen",
         "date": "2023-11-21",
@@ -1206,7 +1224,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 25,
+        "id": 26,
         "name": "CONTENTO",
         "celebrity": "Freen",
         "date": "2023-10-14",
@@ -1236,7 +1254,49 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 26,
+        "id": 27,
+        "name": "Bask Project",
+        "celebrity": "Freen",
+        "date": "2023-10-03",
+        "lat": 13.7268593,
+        "lng": 100.5749449,
+        "mapUrl": "https://maps.app.goo.gl/QUBigNuUqY8Lou4u6",
+        "desc": "",
+        "images": [
+            {
+                "url": "images/Freen/2023/Bask Project/Freen_20231003-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/Bask Project/Freen_20231003-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/Bask Project/Freen_20231003-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/Bask Project/Freen_20231003-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/Bask Project/Freen_20231003-5.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            }
+        ]
+    },
+    {
+        "id": 28,
         "name": "Din Restaurant and Jazz Bar",
         "celebrity": "Freen",
         "date": "2023-06-13",
@@ -1272,59 +1332,35 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 27,
-        "name": "River City Bangkok",
+        "id": 29,
+        "name": "TE TIME AND SPACE",
         "celebrity": "Freen",
-        "date": "2020-10-20,2020-11-04,2023-04-06",
-        "lat": 13.7302214,
-        "lng": 100.5131332,
-        "mapUrl": "https://maps.app.goo.gl/4Sp26bWCzkebt1bW6",
+        "date": "2023-04-07",
+        "lat": 13.7398363,
+        "lng": 100.5806673,
+        "mapUrl": "https://maps.app.goo.gl/Uy6nmyk4oEgvEof19",
         "desc": "",
         "images": [
             {
-                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-1.jpg",
+                "url": "images/Freen/2023/TE TIME AND SPACE/Freen_20230407-1.jpg",
                 "platform": "Instagram",
                 "category": "Life",
                 "author": "Freen"
             },
             {
-                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-2.jpg",
+                "url": "images/Freen/2023/TE TIME AND SPACE/Freen_20230407-2.jpg",
                 "platform": "Instagram",
                 "category": "Life",
                 "author": "Freen"
             },
             {
-                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-3.jpg",
+                "url": "images/Freen/2023/TE TIME AND SPACE/Freen_20230407-3.jpg",
                 "platform": "Instagram",
                 "category": "Life",
                 "author": "Freen"
             },
             {
-                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-4.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-5.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-6.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-7.jpg",
-                "platform": "Instagram",
-                "category": "Life",
-                "author": "Freen"
-            },
-            {
-                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-8.mp4",
+                "url": "images/Freen/2023/TE TIME AND SPACE/Freen_20230407-4.jpg",
                 "platform": "Instagram",
                 "category": "Life",
                 "author": "Freen"
@@ -1332,7 +1368,49 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 28,
+        "id": 30,
+        "name": "Gigi Ristorante",
+        "celebrity": "Freen",
+        "date": "2023-01-11",
+        "lat": 13.7281828,
+        "lng": 100.5733836,
+        "mapUrl": "https://maps.app.goo.gl/vifxiTinuDKahsuAA",
+        "desc": "",
+        "images": [
+            {
+                "url": "images/Freen/2023/Gigi Ristorante/Freen_20230111-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/Gigi Ristorante/Freen_20230111-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/Gigi Ristorante/Freen_20230111-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/Gigi Ristorante/Freen_20230111-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/Gigi Ristorante/Freen_20230111-5.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            }
+        ]
+    },
+    {
+        "id": 31,
         "name": "Pata Plantation Block 28",
         "celebrity": "Freen",
         "date": "2023-01-03",
@@ -1368,67 +1446,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 29,
-        "name": "MBK CENTER",
-        "celebrity": "Freen & Becky",
-        "date": "2022-08-14,2022-12-10",
-        "lat": 13.7447672,
-        "lng": 100.5297816,
-        "mapUrl": "https://maps.app.goo.gl/w6p3CLq3YwcMgU9s6",
-        "desc": "2022/08/14 Freen 生日會<br>2022/12/10 Bec 生日會",
-        "images": [
-            {
-                "url": "images/FreenBecky/2022/MBK CENTER/Becky_20221210-1.jpg",
-                "platform": "Instagram",
-                "category": "Fan Meeting",
-                "author": "FreenBecky"
-            },
-            {
-                "url": "images/FreenBecky/2022/MBK CENTER/Becky_20221210-2.jpg",
-                "platform": "Instagram",
-                "category": "Fan Meeting",
-                "author": "FreenBecky"
-            },
-            {
-                "url": "images/FreenBecky/2022/MBK CENTER/Becky_20221210-3.jpg",
-                "platform": "Instagram",
-                "category": "Fan Meeting",
-                "author": "FreenBecky"
-            },
-            {
-                "url": "images/FreenBecky/2022/MBK CENTER/Becky_20221210-4.jpg",
-                "platform": "Instagram",
-                "category": "Fan Meeting",
-                "author": "FreenBecky"
-            },
-            {
-                "url": "images/FreenBecky/2022/MBK CENTER/Becky_20221210-5.jpg",
-                "platform": "Instagram",
-                "category": "Fan Meeting",
-                "author": "FreenBecky"
-            },
-            {
-                "url": "images/FreenBecky/2022/MBK CENTER/Freen_20220814-1.jpg",
-                "platform": "Instagram",
-                "category": "Fan Meeting",
-                "author": "FreenBecky"
-            },
-            {
-                "url": "images/FreenBecky/2022/MBK CENTER/Freen_20220814-2.jpg",
-                "platform": "Instagram",
-                "category": "Fan Meeting",
-                "author": "FreenBecky"
-            },
-            {
-                "url": "images/FreenBecky/2022/MBK CENTER/Freen_20220814-3.jpg",
-                "platform": "Instagram",
-                "category": "Fan Meeting",
-                "author": "FreenBecky"
-            }
-        ]
-    },
-    {
-        "id": 30,
+        "id": 32,
         "name": "夏洛特甜甜圈",
         "celebrity": "Becky",
         "date": "2022-11-09",
@@ -1464,7 +1482,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 31,
+        "id": 33,
         "name": "FigureGround Cafe",
         "celebrity": "Freen",
         "date": "2022-09-21",
@@ -1518,7 +1536,67 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 32,
+        "id": 34,
+        "name": "MBK CENTER",
+        "celebrity": "Freen & Becky",
+        "date": "2022-08-14,2022-12-10",
+        "lat": 13.7447672,
+        "lng": 100.5297816,
+        "mapUrl": "https://maps.app.goo.gl/w6p3CLq3YwcMgU9s6",
+        "desc": "2022/08/14 Freen 生日會<br>2022/12/10 Bec 生日會",
+        "images": [
+            {
+                "url": "images/FreenBecky/2022/MBK CENTER/Becky_20221210-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/MBK CENTER/Becky_20221210-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/MBK CENTER/Becky_20221210-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/MBK CENTER/Becky_20221210-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/MBK CENTER/Becky_20221210-5.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/MBK CENTER/Freen_20220814-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/MBK CENTER/Freen_20220814-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/MBK CENTER/Freen_20220814-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            }
+        ]
+    },
+    {
+        "id": 35,
         "name": "Woolloomooloo Bakery Ratchada",
         "celebrity": "Freen",
         "date": "2022-07-01",
@@ -1554,7 +1632,43 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 33,
+        "id": 36,
+        "name": "Jolie Café & Bar",
+        "celebrity": "Freen",
+        "date": "2022-05-02",
+        "lat": 13.7028807,
+        "lng": 100.7042086,
+        "mapUrl": "https://maps.app.goo.gl/TCYi4bxFWJvMBL5u5",
+        "desc": "",
+        "images": [
+            {
+                "url": "images/Freen/2022/Jolie Café & Bar/Freen_20220502-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2022/Jolie Café & Bar/Freen_20220502-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2022/Jolie Café & Bar/Freen_20220502-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2022/Jolie Café & Bar/Freen_20220502-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            }
+        ]
+    },
+    {
+        "id": 37,
         "name": "曼谷市立藝術文化中心",
         "celebrity": "Freen",
         "date": "2022-04-15",
@@ -1650,7 +1764,193 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 34,
+        "id": 38,
+        "name": "Asiatique河濱夜市",
+        "celebrity": "Freen & Becky",
+        "date": "2022-03-08,2022-03-09,2023-05-08",
+        "lat": 13.7044587,
+        "lng": 100.5031396,
+        "mapUrl": "https://maps.app.goo.gl/y7sGpoPSekWSTb4b6",
+        "desc": "Team 8 約會地點<br>2022/03/08 Freen Twitter<br>2022/03/09 Bec Instagram Post<br>2023/05/08 Freen Instagram Story",
+        "images": [
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220308-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220308-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220308-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220308-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220308-5.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220308-6.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220309-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220309-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220309-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220309-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220309-5.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Becky_20220309-6.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220308-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220308-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220308-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220308-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220308-5.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220308-6.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220308-7.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220308-8.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220308-9.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220309-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220309-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220309-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220309-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220309-5.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220309-6.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20220309-7.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2022/Asiatique河濱夜市/Freen_20230508-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            }
+        ]
+    },
+    {
+        "id": 39,
         "name": "Jodd Fairs",
         "celebrity": "Freen",
         "date": "2022-03-04",
@@ -1674,7 +1974,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 35,
+        "id": 40,
         "name": "wannaknowyoumore cafe",
         "celebrity": "Freen",
         "date": "2022-02-12",
@@ -1716,7 +2016,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 36,
+        "id": 41,
         "name": "RSU Music Academy Conservatory of Music Rangsit University",
         "celebrity": "Freen & Becky",
         "date": "2022-01-23",
@@ -1728,31 +2028,31 @@ const FB_DATA = [
             {
                 "url": "images/FreenBecky/2022/RSU Music Academy Conservatory of Music Rangsit University/Freen_20220123-1-1.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/RSU Music Academy Conservatory of Music Rangsit University/Freen_20220123-1-2.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/RSU Music Academy Conservatory of Music Rangsit University/Freen_20220123-1-3.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/RSU Music Academy Conservatory of Music Rangsit University/Freen_20220123-1-4.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
     },
     {
-        "id": 37,
+        "id": 42,
         "name": "KAME KAFE",
         "celebrity": "Freen",
         "date": "2022-01-12",
@@ -1794,7 +2094,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 38,
+        "id": 43,
         "name": "Khao-Sō-i",
         "celebrity": "Freen",
         "date": "2022-01-12",
@@ -1812,7 +2112,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 39,
+        "id": 44,
         "name": "MATCHA CABINET",
         "celebrity": "Freen",
         "date": "2022-01-01",
@@ -1830,7 +2130,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 40,
+        "id": 45,
         "name": "Rangsit University",
         "celebrity": "Freen",
         "date": "2022",
@@ -1842,61 +2142,61 @@ const FB_DATA = [
             {
                 "url": "images/Freen/2022/Rangsit University/Freen_2022-1.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2022/Rangsit University/Freen_2022-2.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2022/Rangsit University/Freen_2022-3.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2022/Rangsit University/Freen_2022-4.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2022/Rangsit University/Freen_2022-5.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2022/Rangsit University/Freen_2022-6.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2022/Rangsit University/Freen_2022-7.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2022/Rangsit University/Freen_2022-8.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2022/Rangsit University/Freen_2022-9.jpg",
                 "platform": "Instagram",
-                "category": "University",
+                "category": "Life",
                 "author": "Freen"
             }
         ]
     },
     {
-        "id": 41,
+        "id": 46,
         "name": "99 Home Studio 117",
         "celebrity": "Freen & Becky",
         "date": "2022",
@@ -1907,50 +2207,50 @@ const FB_DATA = [
         "images": [
             {
                 "url": "images/FreenBecky/2022/99 Home Studio 117/FreenBecky_2022-1.jpg",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/99 Home Studio 117/FreenBecky_2022-3.jpg",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/99 Home Studio 117/FreenBecky_2022-5.jpg",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/99 Home Studio 117/FreenBecky_2022-6.jpg",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/99 Home Studio 117/FreenBecky_2022-7.jpg",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/99 Home Studio 117/FreenBecky_2022-8.jpg",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/99 Home Studio 117/FreenBecky_2022-9.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
     },
     {
-        "id": 42,
+        "id": 47,
         "name": "Central Village",
         "celebrity": "Freen & Becky",
         "date": "2022",
@@ -1961,74 +2261,74 @@ const FB_DATA = [
         "images": [
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-1.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-10.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-11.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-2.mp4",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-3.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-4.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-5.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-6.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-7.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-8.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/Central Village/FreenBecky_2022-9.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
     },
     {
-        "id": 43,
+        "id": 48,
         "name": "PATA PLANTATION - ORIGINAL TIWANON",
         "celebrity": "Freen & Becky",
         "date": "2022",
@@ -2039,50 +2339,104 @@ const FB_DATA = [
         "images": [
             {
                 "url": "images/FreenBecky/2022/PATA PLANTATION - ORIGINAL TIWANON/FreenBecky_2022-1.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/PATA PLANTATION - ORIGINAL TIWANON/FreenBecky_2022-2.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/PATA PLANTATION - ORIGINAL TIWANON/FreenBecky_2022-3.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/PATA PLANTATION - ORIGINAL TIWANON/FreenBecky_2022-4.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/PATA PLANTATION - ORIGINAL TIWANON/FreenBecky_2022-5.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/PATA PLANTATION - ORIGINAL TIWANON/FreenBecky_2022-6.png",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             },
             {
                 "url": "images/FreenBecky/2022/PATA PLANTATION - ORIGINAL TIWANON/FreenBecky_2022-7.mp4",
-                "platform": "Instagram,Twitter,YouTube",
-                "category": "Series",
+                "platform": "Instagram",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
     },
     {
-        "id": 44,
+        "id": 49,
+        "name": "Caffè Olives",
+        "celebrity": "Freen",
+        "date": "2021-12-22",
+        "lat": 13.7225658,
+        "lng": 100.5757511,
+        "mapUrl": "https://maps.app.goo.gl/357kyJdwvZTfxMHE7",
+        "desc": "",
+        "images": [
+            {
+                "url": "images/Freen/2021/Caffè Olives/Freen_20211222-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2021/Caffè Olives/Freen_20211222-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2021/Caffè Olives/Freen_20211222-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2021/Caffè Olives/Freen_20211222-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2021/Caffè Olives/Freen_20211222-5.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2021/Caffè Olives/Freen_20211222-6.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2021/Caffè Olives/Freen_20211222-7.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            }
+        ]
+    },
+    {
+        "id": 50,
         "name": "Veranda Resort & Villas Hua Hin Cha Am",
         "celebrity": "Freen",
         "date": "2021-11-05",
@@ -2118,7 +2472,73 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 45,
+        "id": 51,
+        "name": "Soul Salt Paint Bar",
+        "celebrity": "Freen & Becky",
+        "date": "2021-09-21,2021-09-26,2021-09,27",
+        "lat": 13.73448,
+        "lng": 100.5698226,
+        "mapUrl": "https://maps.app.goo.gl/KUpE38cz8Xx6rJ8CA",
+        "desc": "FB 約會地點",
+        "images": [
+            {
+                "url": "images/FreenBecky/2021/Soul Salt Paint Bar/Becky_20210925-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2021/Soul Salt Paint Bar/Becky_20210925-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2021/Soul Salt Paint Bar/Becky_20210925-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2021/Soul Salt Paint Bar/Becky_20210925-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2021/Soul Salt Paint Bar/Freen_20210926-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2021/Soul Salt Paint Bar/Freen_20210926-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2021/Soul Salt Paint Bar/Freen_20210926-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2021/Soul Salt Paint Bar/Freen_20210926-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            },
+            {
+                "url": "images/FreenBecky/2021/Soul Salt Paint Bar/Freen_20210927-4.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "FreenBecky"
+            }
+        ]
+    },
+    {
+        "id": 52,
         "name": "COK Cream of The Koff",
         "celebrity": "Freen & Becky",
         "date": "2021-09-11",
@@ -2238,7 +2658,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 46,
+        "id": 53,
         "name": "Shoo We Doo Wa Cafe",
         "celebrity": "Freen",
         "date": "2021-09-04",
@@ -2274,7 +2694,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 47,
+        "id": 54,
         "name": "EL Café Khaoyai",
         "celebrity": "Freen",
         "date": "2021-06-14",
@@ -2304,7 +2724,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 48,
+        "id": 55,
         "name": "CRAFTSMAN RANGSIT",
         "celebrity": "Freen",
         "date": "2021-03-10",
@@ -2346,7 +2766,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 49,
+        "id": 56,
         "name": "MODUS",
         "celebrity": "Freen",
         "date": "2021-03-03",
@@ -2400,14 +2820,14 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 50,
+        "id": 57,
         "name": "曼谷當代藝術博物館",
         "celebrity": "Freen",
         "date": "2021-02-23",
         "lat": 13.8523441,
         "lng": 100.562816,
         "mapUrl": "https://maps.app.goo.gl/XiA7dxZ9sYHQgHpv5",
-        "desc": "",
+        "desc": "貼文已刪",
         "images": [
             {
                 "url": "images/Freen/2021/曼谷當代藝術博物館/Freen_20210223-1.jpg",
@@ -2418,7 +2838,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 51,
+        "id": 58,
         "name": "巧克力村",
         "celebrity": "Freen",
         "date": "2021-01-18",
@@ -2490,7 +2910,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 52,
+        "id": 59,
         "name": "Glass House Boho",
         "celebrity": "Freen",
         "date": "2021-01-03",
@@ -2532,7 +2952,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 53,
+        "id": 60,
         "name": "Kaembum Fresh Coffee",
         "celebrity": "Freen",
         "date": "2021",
@@ -2544,19 +2964,19 @@ const FB_DATA = [
             {
                 "url": "images/Freen/2021/Kaembum Fresh Coffee/Freen_2021-1.jpg",
                 "platform": "Instagram",
-                "category": "Coffee",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2021/Kaembum Fresh Coffee/Freen_2021-2.jpg",
                 "platform": "Instagram",
-                "category": "Coffee",
+                "category": "Life",
                 "author": "Freen"
             }
         ]
     },
     {
-        "id": 54,
+        "id": 61,
         "name": "IDOLFACTORY",
         "celebrity": "Freen & Becky",
         "date": "2021",
@@ -2568,13 +2988,13 @@ const FB_DATA = [
             {
                 "url": "images/FreenBecky/2021/IDOLFACTORY/FreenBecky_2021-1.png",
                 "platform": "Instagram",
-                "category": "Company",
+                "category": "Life",
                 "author": "FreenBecky"
             }
         ]
     },
     {
-        "id": 55,
+        "id": 62,
         "name": "Groon Bread & Brunch Cafe",
         "celebrity": "Freen",
         "date": "2020-12-31",
@@ -2592,7 +3012,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 56,
+        "id": 63,
         "name": "whispering cafe",
         "celebrity": "Freen",
         "date": "2020-12-20",
@@ -2610,7 +3030,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 57,
+        "id": 64,
         "name": "Wiang Phing Rose Garden",
         "celebrity": "Freen",
         "date": "2020-12-06",
@@ -2670,7 +3090,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 58,
+        "id": 65,
         "name": "i love flower farm",
         "celebrity": "Freen",
         "date": "2020-11-29",
@@ -2700,7 +3120,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 59,
+        "id": 66,
         "name": "I Tim Baan Yaii - homemade ice cream",
         "celebrity": "Freen",
         "date": "2020-11-28",
@@ -2724,7 +3144,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 60,
+        "id": 67,
         "name": "Ashi Cafe",
         "celebrity": "Freen",
         "date": "2020-11-24",
@@ -2742,14 +3162,14 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 61,
+        "id": 68,
         "name": "Hillsborough The English Country House Hotel & Leisure",
         "celebrity": "Freen",
         "date": "2020-11-20",
         "lat": 18.7899992,
         "lng": 98.8400542,
         "mapUrl": "https://maps.app.goo.gl/Bgmva3gm6pAhbfPg6",
-        "desc": "",
+        "desc": "貼文已刪",
         "images": [
             {
                 "url": "images/Freen/2020/Hillsborough The English Country House Hotel & Leisure/Freen_20201120-1.jpg",
@@ -2760,7 +3180,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 62,
+        "id": 69,
         "name": "At Pingnakorn Huaykaew Chiangmai Hotel",
         "celebrity": "Freen",
         "date": "2020-11-17",
@@ -2826,7 +3246,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 63,
+        "id": 70,
         "name": "Nitan Cafe & Garden",
         "celebrity": "Freen",
         "date": "2020-11-13",
@@ -2874,7 +3294,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 64,
+        "id": 71,
         "name": "拉查波比托寺",
         "celebrity": "Freen",
         "date": "2020-10-31",
@@ -2904,7 +3324,67 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 65,
+        "id": 72,
+        "name": "River City Bangkok",
+        "celebrity": "Freen",
+        "date": "2020-10-20,2020-11-04,2023-04-06",
+        "lat": 13.7302214,
+        "lng": 100.5131332,
+        "mapUrl": "https://maps.app.goo.gl/4Sp26bWCzkebt1bW6",
+        "desc": "",
+        "images": [
+            {
+                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-1.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-2.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-3.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-4.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-5.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-6.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-7.jpg",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            },
+            {
+                "url": "images/Freen/2023/River City Bangkok/Freen_20230406-8.mp4",
+                "platform": "Instagram",
+                "category": "Life",
+                "author": "Freen"
+            }
+        ]
+    },
+    {
+        "id": 73,
         "name": "The Jam Factory",
         "celebrity": "Freen",
         "date": "2020-10-10",
@@ -2922,7 +3402,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 66,
+        "id": 74,
         "name": "Mother Roaster Talat Noi",
         "celebrity": "Freen",
         "date": "2020-09-27",
@@ -2994,7 +3474,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 67,
+        "id": 75,
         "name": "B-Story Garden Café & Restaurants",
         "celebrity": "Freen",
         "date": "2019-12-28",
@@ -3012,7 +3492,7 @@ const FB_DATA = [
         ]
     },
     {
-        "id": 68,
+        "id": 76,
         "name": "Ploysang Studio",
         "celebrity": "Freen",
         "date": "2019-12-26",
@@ -3024,73 +3504,73 @@ const FB_DATA = [
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20191226-1.jpg",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20191226-2.jpg",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20191226-3.jpg",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-1.jpg",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-2.jpg",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-3.jpg",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-4.jpg",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-5.jpg",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-6.jpg",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-7.jpg",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             },
             {
                 "url": "images/Freen/2020/Ploysang Studio/Freen_20201024-8.mp4",
                 "platform": "Instagram",
-                "category": "Photo",
+                "category": "Life",
                 "author": "Freen"
             }
         ]
     },
     {
-        "id": 69,
+        "id": 77,
         "name": "ausaa",
         "celebrity": "Freen",
         "date": "2019-12-11",
